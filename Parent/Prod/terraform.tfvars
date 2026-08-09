@@ -3,6 +3,11 @@ rgs = {
     rg_name  = "rg-dushyant"
     location = "centralindia"
   }
+
+    rg2 = {
+    rg_name  = "rg-dolly"
+    location = "eastus"
+  }
 }
 
 vnets = {
