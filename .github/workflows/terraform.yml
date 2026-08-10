@@ -3,14 +3,14 @@ name: Terraform CI/CD
 on:
   push:
     branches:
-    - main
-    - 'feature/**'
+      - main
+      - 'feature/**'
 
   pull_request:
     branches:
-    - main
+      - main
 
-workflow_dispatch:
+  workflow_dispatch:
 
 permissions:
   contents: read
@@ -61,9 +61,9 @@ jobs:
     name: Terraform Apply
     runs-on: ubuntu-latest
 
-    if: github.event_name == 'push' && github.ref == 'refs/heads/main'
-
     needs: terraform-plan
+
+    if: github.event_name == 'push' && github.ref == 'refs/heads/main'
 
     environment:
       name: production
