@@ -4,7 +4,7 @@ rgs = {
     location = "centralindia"
   }
 
-    rg2 = {
+  rg2 = {
     rg_name  = "rg-dolly"
     location = "eastus"
   }
