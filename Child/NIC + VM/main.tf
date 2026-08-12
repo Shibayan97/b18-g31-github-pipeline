@@ -42,7 +42,7 @@ resource "azurerm_windows_virtual_machine" "VM" {
   name                  = each.value.vm_name
   resource_group_name   = each.value.rg_name
   location              = each.value.location
-  size                  = "Standard_D4_v5"
+  size                  = "Standard_B2s"
   admin_username        = each.value.admin_username
   admin_password        = each.value.admin_password
   network_interface_ids = [azurerm_network_interface.NIC[each.key].id]
