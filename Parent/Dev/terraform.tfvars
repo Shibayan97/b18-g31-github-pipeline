@@ -3,11 +3,6 @@ rgs = {
     rg_name  = "rg-dushyant"
     location = "centralindia"
   }
-
-  rg2 = {
-    rg_name  = "rg-rinki"
-    location = "centralindia"
-  }
 }
 
 vnets = {
@@ -32,6 +27,13 @@ subnets = {
     rg_name          = "rg-dushyant"
     vnet_name        = "vnet-Jio"
     address_prefixes = ["10.0.2.0/24"]
+  }
+
+  subnet3 = {
+    subnet_name      = "AzureBastionSubnet"
+    rg_name          = "rg-dushyant"
+    vnet_name        = "vnet-Jio"
+    address_prefixes = ["10.0.3.0/24"]
   }
 
 }
